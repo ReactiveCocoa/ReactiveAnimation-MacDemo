@@ -17,6 +17,8 @@
 		D04EE2981ABFD65600AC8E65 /* ReactiveAnimation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D04EE2931ABFD65600AC8E65 /* ReactiveAnimation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D04EE2991ABFD65600AC8E65 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04EE2941ABFD65600AC8E65 /* ReactiveCocoa.framework */; };
 		D04EE29A1ABFD65600AC8E65 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D04EE2941ABFD65600AC8E65 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D04EE29D1ABFD68D00AC8E65 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04EE29C1ABFD68D00AC8E65 /* MainWindowController.swift */; };
+		D04EE29F1ABFD69E00AC8E65 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04EE29E1ABFD69E00AC8E65 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		D04EE2921ABFD65600AC8E65 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../Carthage/Build/Mac/LlamaKit.framework; sourceTree = "<group>"; };
 		D04EE2931ABFD65600AC8E65 /* ReactiveAnimation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveAnimation.framework; path = ../Carthage/Build/Mac/ReactiveAnimation.framework; sourceTree = "<group>"; };
 		D04EE2941ABFD65600AC8E65 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		D04EE29C1ABFD68D00AC8E65 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		D04EE29E1ABFD69E00AC8E65 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				D04EE2771ABFD63500AC8E65 /* AppDelegate.swift */,
+				D04EE29C1ABFD68D00AC8E65 /* MainWindowController.swift */,
 				D04EE2791ABFD63500AC8E65 /* Images.xcassets */,
 				D04EE27B1ABFD63500AC8E65 /* MainMenu.xib */,
+				D04EE29E1ABFD69E00AC8E65 /* MainWindow.xib */,
 				D04EE2751ABFD63500AC8E65 /* Supporting Files */,
 			);
 			path = MacDemo;
@@ -220,6 +226,7 @@
 			files = (
 				D04EE27A1ABFD63500AC8E65 /* Images.xcassets in Resources */,
 				D04EE27D1ABFD63500AC8E65 /* MainMenu.xib in Resources */,
+				D04EE29F1ABFD69E00AC8E65 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04EE29D1ABFD68D00AC8E65 /* MainWindowController.swift in Sources */,
 				D04EE2781ABFD63500AC8E65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
