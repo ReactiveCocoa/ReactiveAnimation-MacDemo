@@ -23,14 +23,12 @@ final class MainWindowController: NSWindowController {
 		let contentSize = window!.contentView.bounds.size
 		let labelSize = label.bounds.size
 
-		let producer: SignalProducer<CGRect, NoError> = timer(1, onScheduler: QueueScheduler.mainQueueScheduler)
+		RAN(label).frame <~ timer(1, onScheduler: QueueScheduler.mainQueueScheduler)
 			|> map { _ -> CGRect in
 				let origin = NSPoint(x: randomFloat(contentSize.width), y: randomFloat(contentSize.height))
 				return CGRect(origin: origin, size: labelSize)
 			}
-			|> animateEach(duration: 0.2)
+			|> animateEach(duration: 0.2, curve: .EaseInOut)
 			|> join(.Concat)
-
-		RAN(label).frame <~ producer
 	}
 }
